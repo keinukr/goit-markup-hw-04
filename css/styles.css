@@ -1,0 +1,381 @@
+/* Prettier ---- .prettierrc.json ----
+{
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "arrowParens": "avoid",
+  "proseWrap": "always"
+}
+*/
+
+/* ------------- Default Styles ------------*/
+:root {
+  --primary-text-color: #434455;
+  --title-text-color: #2e2f42;
+  --accent-color: #4d5ae5;
+  --white-text-color: #ffffff;
+  --footer-text-color: #f4f4fd;
+  --hover-color: #404bbf;
+  --border-color: #e7e9fc;
+}
+
+.page {
+  background-color: var(--white-text-color);
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*---------------- Page Header ---------------*/
+
+/*------------ Navigation menu-------------*/
+
+.header-menu {
+  border-bottom: 1px solid;
+  border-color: var(--border-color);
+  background-color: var(--white-text-color);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  gap: 40px;
+}
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+
+.logo-header {
+  color: var(--title-text-color);
+}
+
+.menu-text {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.menu-text:hover,
+.menu-text:focus {
+  color: var(--hover-color);
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+}
+
+.address-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.address-text {
+  color: var(--primary-text-color);
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.address-text:hover,
+.address-text:focus {
+  color: var(--hover-color);
+}
+
+/*------------Section 1 Hero --------------*/
+
+.hero {
+  padding: 188px 0;
+  background-color: var(--title-text-color);
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-title {
+  max-width: 496px;
+  margin-bottom: 48px;
+  color: var(--white-text-color);
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+/*-------------- Hero Button  --------*/
+
+.hero-button {
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px 16px 32px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--white-text-color);
+  background-color: var(--hover-color);
+}
+
+/*-------- Section 2 Service -------*/
+
+.service {
+  background-color: var(--white-text-color);
+}
+.features-hidden {
+  color: var(--title-text-color);
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+.features-hidden {
+  visibility: hidden;
+}
+.card-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.card-list {
+  display: flex;
+  gap: 24px;
+}
+
+.card-title {
+  margin-bottom: 8px;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.card-text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/*---------- Section 3 Examples -------*/
+
+.examples {
+  flex-wrap: wrap;
+  padding-bottom: 120px;
+  background-color: var(--white-text-color);
+}
+
+/* формула якщо не прогрузиться картинка то розмір елементу збережеться */
+
+.examples-card-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
+  border: 1px solid var(--stroke-colour);
+}
+
+.section-title {
+  margin-bottom: 72px;
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+
+/*---------- Section 4 Team ---------*/
+
+.team {
+  background-color: var(--footer-text-color);
+}
+
+.team-card-list {
+  flex-wrap: wrap;
+}
+
+.team-card-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--white-text-color);
+}
+
+.team-card-text {
+  padding: 32px 16px;
+  text-align: center;
+}
+
+/*------------- Footer  ------------*/
+
+.footer {
+  padding: 100px 0;
+  background-color: var(--title-text-color);
+}
+
+.footer-logo-text {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-logo-colour {
+  color: var(--footer-text-color);
+}
+
+.footer-text {
+  max-width: 264px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-text-color);
+}
+
+/*------------- Portfolio ----------*/
+/* ----------Filter buttons----------- */
+
+.filter-menu {
+  padding-top: 96px;
+  padding-bottom: 120px;
+
+  background-color: var(--white-text-color);
+}
+
+.filter-list {
+  margin-bottom: 72px;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 12px 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--accent-color);
+  background-color: var(--footer-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  border: 1px solid transparent;
+  color: var(--white-text-color);
+  background-color: var(--hover-color);
+}
+
+/*---------- Services cards ------------*/
+
+.service-card-list {
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.service-card-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.service-card-text {
+  border: 1px solid var(--border-color);
+  border-top: none;
+  padding: 32px 16px;
+}
