@@ -366,13 +366,14 @@ img {
   background-color: var(--white-text-color);
 }
 
-/* .customers-icon-list {
+.customers-icon-list {
   justify-content: center;
-} */
+}
 
 .customers-item {
   height: 88px;
-  width: calc((100% - 168px) / 6);
+  width: 168px;
+  /* width: calc((100% - 168px) / 6); */
 }
 
 .customers-link {
