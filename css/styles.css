@@ -1,4 +1,4 @@
-/* Prettier ---- .prettierrc.json ----
+/* -----------Prettier----------- *
 {
   "printWidth": 80,
   "tabWidth": 2,
@@ -11,7 +11,8 @@
   "arrowParens": "avoid",
   "proseWrap": "always"
 }
-*/
+/
+
 
 /* ------------- Default Styles ------------*/
 :root {
@@ -22,6 +23,8 @@
   --footer-text-color: #f4f4fd;
   --hover-color: #404bbf;
   --border-color: #e7e9fc;
+  --customers-text-color: #8e8f99;
+  --footer-social-hover: #31d0aa;
 }
 
 .page {
@@ -170,6 +173,12 @@ img {
 
 .hero {
   padding: 188px 0;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/bg.jpg);
   background-color: var(--title-text-color);
 }
 
@@ -219,15 +228,26 @@ img {
 .service {
   background-color: var(--white-text-color);
 }
-.features-hidden {
+.visually-hidden {
   color: var(--title-text-color);
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
 }
-.features-hidden {
-  visibility: hidden;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
 .card-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
@@ -235,6 +255,15 @@ img {
 .card-list {
   display: flex;
   gap: 24px;
+}
+
+.features-icon-container {
+  display: flexbox;
+  background-color: var(--footer-text-color);
+  height: 112px;
+  border-radius: 4px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
 }
 
 .card-title {
@@ -298,19 +327,101 @@ img {
 }
 
 .team-card-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding: 32px 16px;
-  text-align: center;
+}
+
+.position-text {
+  margin-bottom: 8px;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
+.social-list-icon {
+  fill: var(--footer-text-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--hover-color);
+}
+
+/*--------- Section 5 Customers ---------*/
+.customers {
+  background-color: var(--white-text-color);
+}
+
+/* .customers-icon-list {
+  justify-content: center;
+} */
+
+.customers-item {
+  height: 88px;
+  width: calc((100% - 168px) / 6);
+}
+
+.customers-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--customers-text-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--hover-color);
+}
+
+.customers-link:hover .customers-list-icon,
+.customers-link:focus .customers-list-icon {
+  fill: var(--hover-color);
+}
+
+.customers-list-icon {
+  width: 104px;
+  height: 56px;
+  fill: var(--customers-text-color);
 }
 
 /*------------- Footer  ------------*/
 
 .footer {
-  padding: 100px 0;
   background-color: var(--title-text-color);
 }
 
+.footer-box {
+  display: flex;
+  justify-content: left;
+  padding: 100px 0;
+}
+
+.footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 264px;
+  margin-right: 120px;
+}
+
 .footer-logo-text {
-  display: inline-block;
+  /* display: inline-block; */
   margin-bottom: 16px;
 }
 
@@ -324,6 +435,41 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-social-text {
+  display: flex;
+  margin-bottom: 16px;
+  color: var(--white-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer-social-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--footer-text-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--footer-social-hover);
 }
 
 /*------------- Portfolio ----------*/
