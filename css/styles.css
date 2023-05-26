@@ -184,13 +184,13 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--title-text-color);
+  max-width: 1140px;
 }
 
-.hero-container {
+.hero {
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 1140px;
 }
 
 .hero-title {
@@ -402,6 +402,7 @@ img {
 .customers-link:hover,
 .customers-link:focus {
   border-color: var(--hover-color);
+  color: var(--hover-color);
 }
 
 .customers-link:hover .customers-list-icon,
@@ -410,8 +411,8 @@ img {
 }
 
 .customers-list-icon {
-  /* fill: currentColor; */
-  fill: var(--customers-text-color);
+  fill: currentColor;
+  /* fill: var(--customers-text-color); */
 }
 
 /*------------- Footer  ------------*/
