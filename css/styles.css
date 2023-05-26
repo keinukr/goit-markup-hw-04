@@ -269,11 +269,13 @@ img {
 }
 
 .features-icon-container {
-  display: flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--footer-text-color);
   height: 112px;
   border-radius: 4px;
-  padding: 24px 100px;
+  /* padding: 24px 100px; */
   margin-bottom: 8px;
 }
 
@@ -391,7 +393,7 @@ img {
   height: 100%;
   border: 1px solid var(--customers-text-color);
   border-radius: 4px;
-  /* color: var(--customers-text-color); */
+  color: var(--customers-text-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -522,6 +524,7 @@ img {
   border: 1px solid transparent;
   color: var(--white-text-color);
   background-color: var(--hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*---------- Services cards ------------*/
@@ -530,6 +533,16 @@ img {
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
+}
+
+.filter-card-link {
+  display: block;
+}
+
+.filter-card-link:hover,
+.filter-card-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .service-card-item {
