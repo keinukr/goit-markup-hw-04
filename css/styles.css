@@ -175,6 +175,7 @@ img {
 
 .hero {
   padding: 188px 0;
+  max-width: 1440px;
   background-size: cover;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -184,10 +185,9 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--title-text-color);
-  max-width: 1140px;
 }
 
-.hero {
+.hero-container {
   display: flex;
   align-items: center;
   flex-direction: column;
